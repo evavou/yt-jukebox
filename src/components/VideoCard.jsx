@@ -4,8 +4,12 @@ import React from 'react';
 const VideoCard = ({ video }) => {
   return (
     <div
-      className="card h-100 shadow-sm rounded-4"
-      style={{ width: '260px' }}
+      className="card h-100 shadow-sm rounded-5"
+      style={{
+        width: '260px',
+        backgroundColor: '#ff0000',
+        borderColor: '#ff0015'  
+      }}
     >
       <a 
         href={video.url} 
@@ -15,7 +19,7 @@ const VideoCard = ({ video }) => {
         aria-label={`Regarder ${video.title}`}
       >
         <svg
-          className="card-img rounded-4"
+          className="card-img rounded-5"
           height="260"
           width="100%"
           viewBox="0 0 260 146"
