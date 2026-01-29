@@ -1,22 +1,14 @@
-//import reactLogo from './assets/react.svg';
-//import viteLogo from '/vite.svg';
-
-
-
+// src/App.jsx
 import React, { useState } from 'react';
-import VideoCard from './components/VideoCard';
+import VideoGrid from './components/CardsGrid'; // Importer le nouveau composant
 import videos from './data/videos';
 import './App.css';
-
-
 
 function App() {
   const [selectedTag, setSelectedTag] = useState('tous');
   
-  // Récupérer tous les tags uniques
   const allTags = ['tous', ...new Set(videos.flatMap(video => video.tags))];
   
-  // Filtrer les vidéos
   const filteredVideos = selectedTag === 'tous' 
     ? videos 
     : videos.filter(video => video.tags.includes(selectedTag));
@@ -24,7 +16,7 @@ function App() {
   return (
     <div className="container py-4">
       <header className="mb-4">
-        <h1 className="display-5 fw-bold">playlist of playlists </h1>
+        <h1 className="display-5 fw-bold">playlist of playlists</h1>
         <p className="lead">Toutes mes musiques préférées en un seul endroit</p>
       </header>
       
@@ -53,16 +45,24 @@ function App() {
       <div className="alert alert-light mb-3">
         <i className="bi bi-music-note me-2"></i>
         {filteredVideos.length} vidéo{filteredVideos.length > 1 ? 's' : ''} trouvée{filteredVideos.length > 1 ? 's' : ''}
+        
+        {/* Afficher le nombre de colonnes calculées */}
+        {filteredVideos.length > 0 && (
+          <span className="ms-3 text-muted">
+            <small>
+              (Affichage optimal: {Math.min(filteredVideos.length, 4)} par ligne)
+            </small>
+          </span>
+        )}
       </div>
       
-      {/* Grille de vignettes */}
-      <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-5">
-        {filteredVideos.map(video => (
-          <div key={video.id} className="col">
-            <VideoCard video={video} />
-          </div>
-        ))}
-      </div>
+      {/* Nouvelle grille dynamique */}
+      <VideoGrid 
+        videos={filteredVideos}
+        cardWidth={200}  // Largeur de vos cartes
+        minGap={10}      // Espacement minimum entre les cartes (en px)
+        maxCardsPerRow={10} // Maximum de cartes par ligne
+      />
       
       {/* Message si pas de résultats */}
       {filteredVideos.length === 0 && (
@@ -73,7 +73,6 @@ function App() {
         </div>
       )}
       
-      {/* Pied de page */}
       <footer className="mt-5 pt-4 border-top text-center text-muted">
         <p>
           Créé avec React et Bootstrap • 
