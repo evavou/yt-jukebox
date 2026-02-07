@@ -1,0 +1,80 @@
+
+
+/*------------------CARDS------------------*/
+
+.card {
+  transition: all .2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 100px color-mix(in srgb, var(--selected-tag-color ) 80%, transparent) !important;
+  outline: 10px solid var(--selected-tag-color) !important ; 
+}
+
+
+.video-title {
+  position: absolute;
+  bottom: 32px;
+  left: 10px;
+  right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+  pointer-events: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.video-info {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 3px;
+  color: white;
+  font-weight: 900;
+  font-size: 10px;
+  font-family: monospace;
+  
+  mix-blend-mode: difference;
+  transition: all 0.1s ease;
+}
+
+.video-shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50%;
+  background:
+    linear-gradient(to top, rgba(21, 21, 21, 0.742) 0%, transparent 100%),
+    linear-gradient(to top, rgba(21, 21, 21, 0.39) 30%, transparent 100%);
+  pointer-events: 'none';
+}
+
+/*------------------BADGE------------------*/
+.badge-container {
+  white-space: nowrap;
+  display: flex;
+  gap : 0.2rem !important;
+}
+
+
+.badge {
+  display: inline-block;  
+  margin-right: 0;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 0.2em 0.6em;
+  white-space: nowrap; /* pas de retour a la ligne */
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+
+.badge:hover {
+  transform: scale(1.06);
+}
+

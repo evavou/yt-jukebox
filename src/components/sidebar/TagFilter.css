@@ -1,0 +1,32 @@
+/* src/components/TagFilter.css */
+.tag-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* espace entre les boutons */
+  width: 100%;
+  flex: 0 0 content;/* pour alligner dans filters-row */
+}
+
+.tag-button {
+  border-width: 0px;
+  font-weight: 400;
+  transition: all 0.1s ease-in;
+  opacity: 0.9;
+  font-family: monospace;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 0.375rem;
+  width: 102px;
+  height: 32px;
+}
+
+.tag-button.selected {
+  font-weight: 900;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.tag-button:hover {
+  transform: scale(1.1);
+}

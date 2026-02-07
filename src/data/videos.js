@@ -2,7 +2,7 @@ const videos = [
   {
     title: 'tomorrow, you\'ll feel better',
     id: 'or2SriWNolI',
-    mixeur: 'drift away ambiance',
+    channel: 'drift away ambiance',
     tags: ['ost', 'games'],
     hours: 6,
     minutes: 0,
@@ -11,7 +11,7 @@ const videos = [
   {
     title: 'Zelda BotW - A Storm in Hyrule',
     id: 'clsohrBp8l0',
-    mixeur: 'maich',
+    channel: 'maich',
     tags: ['ost', 'games'],
     hours: 4,
     minutes: 0,
@@ -20,7 +20,7 @@ const videos = [
   {
     title: 'mario kart bops for speeding on the highway',
     id: 'ZuitJHmqwOY',
-    mixeur: 'ninchrisu',
+    channel: 'ninchrisu',
     tags: ['ost', 'games'],
     hours: 1,
     minutes: 34,
@@ -29,7 +29,7 @@ const videos = [
   {
     title: 'a cold night in minecraft',
     id: 'Z44UEdoH59Q',
-    mixeur: 'voxel 4k',
+    channel: 'voxel 4k',
     tags: ['ost', 'games'],
     hours: 5,
     minutes: 0,
@@ -38,8 +38,8 @@ const videos = [
   {
     title: 'Ghibli Jazz',
     id: '7lq6e4Lu4B8',
-    mixeur: 'jazzne',
-    tags: ['ost', 'japan'],
+    channel: 'jazzne',
+    tags: ['ost', 'jazz', 'japan'],
     hours: 10,
     minutes: 37,
     tier: 2
@@ -47,7 +47,7 @@ const videos = [
   {
     title: 'pov: you\'re lying in grass on a peaceful summer day',
     id: 'G8M8WJ10ITU',
-    mixeur: 'shadowtracks',
+    channel: 'shadowtracks',
     tags: ['ost', 'japan'],
     hours: 0,
     minutes: 34,
@@ -56,7 +56,7 @@ const videos = [
   {
     title: 'minecraft music for studying',
     id: 'vCTRNKPJr40',
-    mixeur: 'beforephantoms',
+    channel: 'beforephantoms',
     tags: ['ost', 'games'],
     hours: 3,
     minutes: 0,
@@ -65,7 +65,7 @@ const videos = [
   {
     title: 'pov: you left zelda music playing in another room...',
     id: '1WiuxWRaQpY',
-    mixeur: 'sleepy frisk',
+    channel: 'sleepy frisk',
     tags: ['ost', 'games'],
     hours: 6,
     minutes: 53,
@@ -74,7 +74,7 @@ const videos = [
   {
     title: 'winter 2004 ambient music to relax',
     id: 'bepGYHbvIKI',
-    mixeur: 'zerofuturism',
+    channel: 'zerofuturism',
     tags: ['ambient'],
     hours: 3,
     minutes: 0,
@@ -83,7 +83,7 @@ const videos = [
   {
     title: 'The Dreampools',
     id: 'p1wjN_Vk4HY',
-    mixeur: 'zerofuturism',
+    channel: 'zerofuturism',
     tags: ['ambient'],
     hours: 3,
     minutes: 0,
@@ -92,7 +92,7 @@ const videos = [
   {
     title: 'Deep Focus Study -40Hz',
     id: '0l0mK7Pr6sQ',
-    mixeur: 'mindflow',
+    channel: 'mindflow',
     tags: ['ambient'],
     hours: 1,
     minutes: 0,
@@ -101,7 +101,7 @@ const videos = [
   {
     title: 'Fireplace 10 hours full HD',
     id: 'L_LUpnjgPso',
-    mixeur: 'fireplace',
+    channel: 'fireplace',
     tags: ['ambient'],
     hours: 10,
     minutes: 0,
@@ -110,7 +110,7 @@ const videos = [
   {
     title: 'Aquatic Ambience',
     id: 'KQTVYrP1v5M',
-    mixeur: 'jordan',
+    channel: 'jordan',
     tags: ['ambient', 'wtf'],
     hours: 1,
     minutes: 0,
@@ -119,7 +119,7 @@ const videos = [
   {
     title: 'i have no ennemies loop dog',
     id: 'Fnbd5z8kJFk',
-    mixeur: 'lrkv',
+    channel: 'lrkv',
     tags: ['ambient'],
     hours: 1,
     minutes: 1,
@@ -128,7 +128,7 @@ const videos = [
   {
     title: 'Fish Spinning to Funky Town Extended for 10 hours',
     id: '6_hl8AB7Uf0',
-    mixeur: 'breezy',
+    channel: 'breezy',
     tags: ['ambient'],
     hours: 10,
     minutes: 0,
@@ -137,7 +137,7 @@ const videos = [
   {
     title: 'wii shop music',
     id: 'bPkNXF9NJcs',
-    mixeur: 'xokiller15',
+    channel: 'xokiller15',
     tags: ['ambient'],
     hours: 24,
     minutes: 0,
@@ -146,7 +146,7 @@ const videos = [
   {
     title: '1 hour of Shreksophone',
     id: 'wqAp4h7cjoM',
-    mixeur: '10 hours music',
+    channel: '10 hours music',
     tags: ['ambient', 'wtf'],
     hours: 1,
     minutes: 0,
@@ -155,7 +155,7 @@ const videos = [
   {
     title: 'dancin 24 hours',
     id: 'iPaBUhIsslA',
-    mixeur: 'hotdogster',
+    channel: 'hotdogster',
     tags: ['ambient'],
     hours: 24,
     minutes: 0,
@@ -164,7 +164,7 @@ const videos = [
   {
     title: 'Dance Till You\'re Dead 24 Hours',
     id: 'q02c6dGjevo',
-    mixeur: 'hotdogster',
+    channel: 'hotdogster',
     tags: ['ambient'],
     hours: 24,
     minutes: 0,
@@ -173,7 +173,7 @@ const videos = [
   {
     title: 'Portal Radio - Still Alive',
     id: 'DnyZ1cy0vso',
-    mixeur: 'skrill',
+    channel: 'skrill',
     tags: ['ambient', 'games'],
     hours: 10,
     minutes: 0,
@@ -182,7 +182,7 @@ const videos = [
   {
     title: 'Portal Radio Uncompressed',
     id: 'qAQahr6Eddg',
-    mixeur: 'dynamagon',
+    channel: 'dynamagon',
     tags: ['ambient', 'games'],
     hours: 10,
     minutes: 0,
@@ -191,7 +191,7 @@ const videos = [
   {
     title: 'Feathers Nujabes Instrumental',
     id: 'zerLkXxKGbg',
-    mixeur: 'hikari',
+    channel: 'hikari',
     tags: ['ambient'],
     hours: 1,
     minutes: 0,
@@ -200,7 +200,7 @@ const videos = [
   {
     title: 'safe place',
     id: '0c-qvLx5Xf0',
-    mixeur: 'nobody',
+    channel: 'nobody',
     tags: ['peace'],
     hours: 4,
     minutes: 47,
@@ -209,7 +209,7 @@ const videos = [
   {
     title: 'Need to focus? This playlist will help you lock in.',
     id: 'BruVjAw1Tnc',
-    mixeur: 'founder fm',
+    channel: 'founder fm',
     tags: ['chill'],
     hours: 1,
     minutes: 49,
@@ -218,7 +218,7 @@ const videos = [
   {
     title: '90s Style Ambient Jungle Mix',
     id: 'Nh9BrD3xIeU',
-    mixeur: 'mostly hairless',
+    channel: 'mostly hairless',
     tags: ['energy'],
     hours: 1,
     minutes: 45,
@@ -227,7 +227,7 @@ const videos = [
   {
     title: 'Hyperdrive Boogie',
     id: 'pbTO0w-fWKE',
-    mixeur: 'hyperdrive sound',
+    channel: 'hyperdrive sound',
     tags: ['jazz'],
     hours: 1,
     minutes: 0,
@@ -236,7 +236,7 @@ const videos = [
   {
     title: 'Japanese Jazz Fusion for driving at night in Google Street View',
     id: 'G8XvG1RwOD8',
-    mixeur: 'sandristas 009',
+    channel: 'sandristas 009',
     tags: ['jazz', 'japan'],
     hours: 1,
     minutes: 21,
@@ -245,7 +245,7 @@ const videos = [
   {
     title: 'nintendo frutiger aero chill mix',
     id: 'v3gOQbh32Pg',
-    mixeur: 'ninchrisu',
+    channel: 'ninchrisu',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 16,
@@ -254,7 +254,7 @@ const videos = [
   {
     title: 'Sonic & Chill',
     id: 'Amo-w9r29YA',
-    mixeur: 'dunk diction',
+    channel: 'dunk diction',
     tags: ['energy', 'games'],
     hours: 0,
     minutes: 43,
@@ -263,7 +263,7 @@ const videos = [
   {
     title: 'Chill & Relaxing Pok mon Music Mix',
     id: 'YMEblRM4pGc',
-    mixeur: 'beacori',
+    channel: 'beacori',
     tags: ['chill', 'games', 'games'],
     hours: 1,
     minutes: 1,
@@ -272,7 +272,7 @@ const videos = [
   {
     title: 'remember when lofi hip-hop still sounded like this.',
     id: '617L_MOB37k',
-    mixeur: 'the bootleg boy 2',
+    channel: 'the bootleg boy 2',
     tags: ['lofi'],
     hours: 1,
     minutes: 0,
@@ -281,7 +281,7 @@ const videos = [
   {
     title: 'POV: you found this cool mixtape at end of the world',
     id: '_HY9wyLjRDE',
-    mixeur: 'yaman ege music',
+    channel: 'yaman ege music',
     tags: ['jazz', 'japan'],
     hours: 2,
     minutes: 11,
@@ -290,7 +290,7 @@ const videos = [
   {
     title: '4 Hours of Indie Game Music',
     id: 'KuBCTi6NnNM',
-    mixeur: 'krub',
+    channel: 'krub',
     tags: ['chill', 'games'],
     hours: 4,
     minutes: 0,
@@ -299,7 +299,7 @@ const videos = [
   {
     title: 'You are a spy who is about to be exposed',
     id: 'khRJMiquAjA',
-    mixeur: 'april',
+    channel: 'april',
     tags: ['energy'],
     hours: 0,
     minutes: 40,
@@ -308,7 +308,7 @@ const videos = [
   {
     title: 'a gran turismo vibe mix.',
     id: 'Rm8Isn0jP6E',
-    mixeur: 'volante',
+    channel: 'volante',
     tags: ['chill', 'games'],
     hours: 0,
     minutes: 54,
@@ -317,7 +317,7 @@ const videos = [
   {
     title: 'Calm Nintendo games music to finish the day',
     id: '15bZlN0LrFg',
-    mixeur: 'vapid',
+    channel: 'vapid',
     tags: ['chill', 'games', 'nintendo'],
     hours: 1,
     minutes: 47,
@@ -326,7 +326,7 @@ const videos = [
   {
     title: 'chill and nostalgic wii music',
     id: 'Pn61zKFkf2A',
-    mixeur: 'miffynoa',
+    channel: 'miffynoa',
     tags: ['chill', 'games', 'nintendo'],
     hours: 1,
     minutes: 11,
@@ -335,7 +335,7 @@ const videos = [
   {
     title: 'got worries?',
     id: 'z670UNsWx0s',
-    mixeur: 'room waves',
+    channel: 'room waves',
     tags: ['chill'],
     hours: 1,
     minutes: 28,
@@ -344,7 +344,7 @@ const videos = [
   {
     title: 'Himiko Kikuchi - Flying Beagle (1987)',
     id: 'HHOn8u-c2wk',
-    mixeur: 'captain chef',
+    channel: 'captain chef',
     tags: ['chill', 'japan'],
     hours: 0,
     minutes: 42,
@@ -353,7 +353,7 @@ const videos = [
   {
     title: 'Nintendo music that\'s very Nintendo',
     id: 'k7UsX8aQkN4',
-    mixeur: 'vipid',
+    channel: 'vipid',
     tags: ['chill', 'games', 'nintendo'],
     hours: 1,
     minutes: 7,
@@ -362,7 +362,7 @@ const videos = [
   {
     title: 'Goofy goober playlist',
     id: 'oUI_tVU77cw',
-    mixeur: 'starzz',
+    channel: 'starzz',
     tags: ['chill'],
     hours: 0,
     minutes: 32,
@@ -371,7 +371,7 @@ const videos = [
   {
     title: 'Goofy goober playlist 2',
     id: '5CfOSjjrztA',
-    mixeur: 'starzz',
+    channel: 'starzz',
     tags: ['chill'],
     hours: 0,
     minutes: 31,
@@ -380,7 +380,7 @@ const videos = [
   {
     title: 'having a good time with your silly cat',
     id: 'uvTs7YPIkhA',
-    mixeur: 'kora',
+    channel: 'kora',
     tags: ['chill'],
     hours: 0,
     minutes: 23,
@@ -389,7 +389,7 @@ const videos = [
   {
     title: 'you have found the mythical seal cave',
     id: 'WCs-7HmA9Qk',
-    mixeur: 'azali',
+    channel: 'azali',
     tags: ['chill'],
     hours: 8,
     minutes: 0,
@@ -398,7 +398,7 @@ const videos = [
   {
     title: 'wake up! it\'s 2000s again - frutiger aero/nostalgic playlist',
     id: 'Cz2YCRmDOFk',
-    mixeur: 'nostalgate',
+    channel: 'nostalgate',
     tags: ['chill'],
     hours: 1,
     minutes: 38,
@@ -407,7 +407,7 @@ const videos = [
   {
     title: 'remember when lofi hip-hop was smooth like this.',
     id: 'm8WjnuhoeDg',
-    mixeur: 'the bootleg boy 2',
+    channel: 'the bootleg boy 2',
     tags: ['lofi'],
     hours: 1,
     minutes: 2,
@@ -416,7 +416,7 @@ const videos = [
   {
     title: 'remember when lofi hip-hop felt like this.',
     id: 'NvBmd-waMQg',
-    mixeur: 'the bootleg boy 2',
+    channel: 'the bootleg boy 2',
     tags: ['lofi'],
     hours: 1,
     minutes: 1,
@@ -425,8 +425,8 @@ const videos = [
   {
     title: 'at cafe [LoFi Hip hop Jazz mix]',
     id: '7nMsw5twDLs',
-    mixeur: 'tswizzie',
-    tags: ['lofi'],
+    channel: 'tswizzie',
+    tags: ['lofi', 'jazz'],
     hours: 0,
     minutes: 52,
     tier: 2
@@ -434,7 +434,7 @@ const videos = [
   {
     title: 'lofi type beat',
     id: 'cbuZfY2S2UQ',
-    mixeur: 'yanu_',
+    channel: 'yanu_',
     tags: ['lofi'],
     hours: 2,
     minutes: 50,
@@ -443,7 +443,7 @@ const videos = [
   {
     title: 'Night Drive mix hip hop lofi',
     id: 'zW5wpJY1rgQ',
-    mixeur: 'mimi lofi chill',
+    channel: 'mimi lofi chill',
     tags: ['lofi'],
     hours: 24,
     minutes: 0,
@@ -452,7 +452,7 @@ const videos = [
   {
     title: 'old songs but it\'s lofi remix',
     id: 'BrnDlRmW5hs',
-    mixeur: 'lo-fi music',
+    channel: 'lo-fi music',
     tags: ['lofi'],
     hours: 0,
     minutes: 24,
@@ -461,7 +461,7 @@ const videos = [
   {
     title: 'A Very Silly Playlist That Will Tickle Your Brain',
     id: '8Jk_5Yry_SE',
-    mixeur: 'sandristas 009',
+    channel: 'sandristas 009',
     tags: ['lofi'],
     hours: 0,
     minutes: 42,
@@ -470,7 +470,7 @@ const videos = [
   {
     title: 'It\'s 4 a.m. in 1987 and you can\'t sleep.',
     id: 'kNq5zKoYfc8',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 2,
@@ -479,7 +479,7 @@ const videos = [
   {
     title: 'Late night office',
     id: '_psqZ5ciP30',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 0,
@@ -488,7 +488,7 @@ const videos = [
   {
     title: 'It\'s always 4 a.m.',
     id: 'QDF26jiK2-s',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 1,
@@ -497,7 +497,7 @@ const videos = [
   {
     title: 'It\'s 1987 and you tsayed at the office',
     id: 'AcQ3Di2Gewc',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 7,
@@ -506,7 +506,7 @@ const videos = [
   {
     title: 'It\'s 1983 and you\'re stuck in the office',
     id: 'WWL2dHMIty4',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 0,
@@ -515,7 +515,7 @@ const videos = [
   {
     title: 'Midnight Chill',
     id: 'mM5ymA4H_Qs',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 8,
@@ -524,7 +524,7 @@ const videos = [
   {
     title: 'Late night chill 3',
     id: 'pEbtkVr5eBc',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 0,
@@ -533,7 +533,7 @@ const videos = [
   {
     title: 'Futur we never had',
     id: 'iolNgnouVv4',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 0,
@@ -542,7 +542,7 @@ const videos = [
   {
     title: 'Back to the 80s',
     id: 'Yf7-z6P9Q94',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 51,
@@ -551,7 +551,7 @@ const videos = [
   {
     title: 'oh finally, winter is here',
     id: 'hoCHcHkS7hY',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 4,
     minutes: 24,
@@ -560,7 +560,7 @@ const videos = [
   {
     title: 'Late night Vaporwave',
     id: 'A93NU9_iw6Q',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 24,
@@ -569,7 +569,7 @@ const videos = [
   {
     title: 'chill, it\'s 1986',
     id: 'SmnLu-K4ygg',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 5,
     minutes: 2,
@@ -578,7 +578,7 @@ const videos = [
   {
     title: '1993 blue hour',
     id: 'aGNZFZmgjVw',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 29,
@@ -587,7 +587,7 @@ const videos = [
   {
     title: 'Late night chill',
     id: 'O5-WIDPNrFk',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 27,
@@ -596,7 +596,7 @@ const videos = [
   {
     title: 'late night chill 2',
     id: 'GW3B30KQczs',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 2,
@@ -605,7 +605,7 @@ const videos = [
   {
     title: 'Late night work',
     id: '80Zv7K3LaUU',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 2,
@@ -614,7 +614,7 @@ const videos = [
   {
     title: '1992 late night work',
     id: 'FkFE2H2loPg',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 1,
     minutes: 19,
@@ -623,7 +623,7 @@ const videos = [
   {
     title: 'pov: it\'s Halloween in 1983',
     id: 'q-UxqnAcFkg',
-    mixeur: 'utopic dreamer',
+    channel: 'utopic dreamer',
     tags: ['peace'],
     hours: 6,
     minutes: 29,
@@ -632,7 +632,7 @@ const videos = [
   {
     title: 'Le Fishe Playlist (Animated)',
     id: 'bbcPLei01Ls',
-    mixeur: 'rain and dirt',
+    channel: 'rain and dirt',
     tags: ['jazz', 'wtf', 'french'],
     hours: 0,
     minutes: 59,
@@ -641,7 +641,7 @@ const videos = [
   {
     title: 'Le Fishe Au Chocolat Playlist (Animated)',
     id: 'QW2fIqZTpUE',
-    mixeur: 'rain and dirt',
+    channel: 'rain and dirt',
     tags: ['jazz', 'wtf', 'french'],
     hours: 0,
     minutes: 58,
@@ -650,7 +650,7 @@ const videos = [
   {
     title: 'Music for places where I wish I could eat the Kirkland Costco Hotdog',
     id: '06880nn9DoA',
-    mixeur: 'rain and dirt',
+    channel: 'rain and dirt',
     tags: ['energy', 'wtf'],
     hours: 0,
     minutes: 58,
@@ -659,7 +659,7 @@ const videos = [
   {
     title: 'Chilling in the Poolrooms...',
     id: 'H6XvgqSwBZw',
-    mixeur: 'rain and dirt',
+    channel: 'rain and dirt',
     tags: ['chill', 'wtf'],
     hours: 0,
     minutes: 55,
@@ -668,7 +668,7 @@ const videos = [
   {
     title: 'listening to luv sic pt.2 but also other songs',
     id: 'sgIYJooKO8c',
-    mixeur: 'rain and dirt',
+    channel: 'rain and dirt',
     tags: ['chill'],
     hours: 1,
     minutes: 1,
@@ -677,7 +677,7 @@ const videos = [
   {
     title: 'morning routine house mix',
     id: '8B4soa7z098',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 0,
     minutes: 44,
@@ -686,7 +686,7 @@ const videos = [
   {
     title: 'this house mix finds you',
     id: 'pHrGDXEBPGs',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 0,
     minutes: 55,
@@ -695,7 +695,7 @@ const videos = [
   {
     title: 'underground deep house mix',
     id: 'WMG2EEregSk',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 0,
     minutes: 41,
@@ -704,7 +704,7 @@ const videos = [
   {
     title: 'underground deep house mix pt.2',
     id: '5RvZvMmenHA',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 0,
     minutes: 47,
@@ -713,7 +713,7 @@ const videos = [
   {
     title: 'underground deep house mix pt.3',
     id: 'L6UMfrrSPgg',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 0,
     minutes: 49,
@@ -722,7 +722,7 @@ const videos = [
   {
     title: 'deep house mix for a good time',
     id: '868eZTy-OuY',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 1,
     minutes: 28,
@@ -731,8 +731,8 @@ const videos = [
   {
     title: 'jazzy house mix',
     id: 'OkMi6fCAxyU',
-    mixeur: 'gesus8',
-    tags: ['house'],
+    channel: 'gesus8',
+    tags: ['house', 'jazz'],
     hours: 0,
     minutes: 36,
     tier: 2
@@ -740,7 +740,7 @@ const videos = [
   {
     title: 'sunny morning house mix',
     id: 'vU5enfCmHpo',
-    mixeur: 'gesus8',
+    channel: 'gesus8',
     tags: ['house'],
     hours: 0,
     minutes: 46,
@@ -749,7 +749,7 @@ const videos = [
   {
     title: 'i can\'t explain and i wont even try',
     id: 'dY5NwUk2nIw',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 47,
@@ -758,7 +758,7 @@ const videos = [
   {
     title: 'ambience that\'s always there for you',
     id: 'Kbip8GQ6XQw',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 48,
@@ -767,7 +767,7 @@ const videos = [
   {
     title: 'peace',
     id: 'T1dV08Wervc',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 46,
@@ -776,7 +776,7 @@ const videos = [
   {
     title: 'don\'t stress about things you can\'t control',
     id: '8fjrv9l6FDU',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 20,
@@ -785,7 +785,7 @@ const videos = [
   {
     title: 'calm',
     id: 'Zv83ljtR-oc',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 31,
@@ -794,7 +794,7 @@ const videos = [
   {
     title: 'Ambient3k',
     id: 'XjeJkMk4_Pc',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 45,
@@ -803,7 +803,7 @@ const videos = [
   {
     title: 'Ambient4k',
     id: 'YUQqeV2NYOU',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 1,
     minutes: 0,
@@ -812,7 +812,7 @@ const videos = [
   {
     title: 'all you need',
     id: 'nheHwBByImg',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 51,
@@ -821,7 +821,7 @@ const videos = [
   {
     title: 'let it all go',
     id: 'CVeYI-gmX00',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 33,
@@ -830,7 +830,7 @@ const videos = [
   {
     title: 'zoned out',
     id: '1W1-nPXEVKk',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 41,
@@ -839,7 +839,7 @@ const videos = [
   {
     title: 'give your brain a break',
     id: '6cEPhoy6nKE',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 44,
@@ -848,7 +848,7 @@ const videos = [
   {
     title: 'relax',
     id: 'B-gZrtWNX-A',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 35,
@@ -857,7 +857,7 @@ const videos = [
   {
     title: 'escape',
     id: 'R2HINFeXKpo',
-    mixeur: 'ambient2k',
+    channel: 'ambient2k',
     tags: ['peace'],
     hours: 0,
     minutes: 35,
@@ -866,7 +866,7 @@ const videos = [
   {
     title: 'pure video game bops for locking in',
     id: 'NyQCiqfkTA8',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['energy', 'games'],
     hours: 0,
     minutes: 49,
@@ -875,7 +875,7 @@ const videos = [
   {
     title: 'MORE video game bops for locking in',
     id: 'tIsiYbJLwIg',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['energy', 'games'],
     hours: 0,
     minutes: 56,
@@ -884,7 +884,7 @@ const videos = [
   {
     title: 'even MORE video game bops for locking in',
     id: 'RBjOql8hcA0',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['energy', 'games'],
     hours: 0,
     minutes: 54,
@@ -893,7 +893,7 @@ const videos = [
   {
     title: 'rally house for throwin it sideways',
     id: 'AiqaEMchDAA',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 0,
     minutes: 51,
@@ -902,7 +902,7 @@ const videos = [
   {
     title: 'rally house 5.0',
     id: 'oqXXgf0mbe4',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 0,
     minutes: 57,
@@ -911,7 +911,7 @@ const videos = [
   {
     title: 'rally house that goes down smooth',
     id: '4wnPud4kBVE',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 0,
     minutes: 54,
@@ -920,7 +920,7 @@ const videos = [
   {
     title: '4 hours of french house for genuinely spacing out',
     id: 'f9BKkGN56KY',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house', 'french'],
     hours: 4,
     minutes: 14,
@@ -929,7 +929,7 @@ const videos = [
   {
     title: 'nonstop uk garage dubs to bump to',
     id: 'lFuErjQKoYg',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['energy'],
     hours: 0,
     minutes: 59,
@@ -938,7 +938,7 @@ const videos = [
   {
     title: 'rally house to get low poly to',
     id: 'AAR7Kl_n9oM',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 0,
     minutes: 46,
@@ -947,7 +947,7 @@ const videos = [
   {
     title: 'french house to whimsically vibe to',
     id: '48wo5KINI_g',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house', 'french'],
     hours: 0,
     minutes: 44,
@@ -956,7 +956,7 @@ const videos = [
   {
     title: 'rally house for cruising into the void',
     id: 'zd9pOoICt34',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 1,
     minutes: 29,
@@ -965,7 +965,7 @@ const videos = [
   {
     title: 'french house to goof off to',
     id: '-AgKZEBkDFA',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house', 'french'],
     hours: 0,
     minutes: 55,
@@ -974,7 +974,7 @@ const videos = [
   {
     title: '2000s edits that i found on my ipod',
     id: '60HwwaAVFu0',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['energy'],
     hours: 0,
     minutes: 50,
@@ -983,7 +983,7 @@ const videos = [
   {
     title: 'speedy house for gettin twisted',
     id: '9XDVROQ3rJI',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 0,
     minutes: 56,
@@ -992,7 +992,7 @@ const videos = [
   {
     title: 'french house for acting foolish',
     id: 'uIPto58mfWw',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house', 'french'],
     hours: 0,
     minutes: 52,
@@ -1001,7 +1001,7 @@ const videos = [
   {
     title: '5 hours of rally house for hittin the bricks',
     id: 'JFbHgOyogcg',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house'],
     hours: 4,
     minutes: 33,
@@ -1010,7 +1010,7 @@ const videos = [
   {
     title: 'future funk to get analog to',
     id: '6aPR9MFAMDI',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['energy'],
     hours: 0,
     minutes: 53,
@@ -1019,7 +1019,7 @@ const videos = [
   {
     title: 'french house for nonchalantly groovin',
     id: '6OGp_lZT2tM',
-    mixeur: 'denz1000',
+    channel: 'denz1000',
     tags: ['house', 'french'],
     hours: 0,
     minutes: 47,
@@ -1028,7 +1028,7 @@ const videos = [
   {
     title: 'Upbeat & chill Nintendo aquarium playlist to get to work!',
     id: 'nRxhBM9b0yE',
-    mixeur: 'vanille',
+    channel: 'vanille',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 21,
@@ -1037,7 +1037,7 @@ const videos = [
   {
     title: 'Nintendo music mix to cure your depression',
     id: 'NugaoOcwblM',
-    mixeur: 'vanille',
+    channel: 'vanille',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 3,
@@ -1046,7 +1046,7 @@ const videos = [
   {
     title: 'Nintendo Upbeat music to work in the morning.',
     id: 'WjdM1gmMMvQ',
-    mixeur: 'vanille',
+    channel: 'vanille',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 27,
@@ -1055,7 +1055,7 @@ const videos = [
   {
     title: 'Nintendo music while you procrastinate',
     id: 'JRr_Smyf7xw',
-    mixeur: 'vanille',
+    channel: 'vanille',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 9,
@@ -1064,7 +1064,7 @@ const videos = [
   {
     title: '2 hours of chill video game music',
     id: 'JJis0sld2cM',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 0,
@@ -1073,7 +1073,7 @@ const videos = [
   {
     title: 'video game BANGERS pt. 3',
     id: 'YRz7WMZ7uqo',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games'],
     hours: 4,
     minutes: 0,
@@ -1082,7 +1082,7 @@ const videos = [
   {
     title: 'UPBEAT video game music pt. 2',
     id: 'hc8Iys3KKLo',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games', 'nintendo'],
     hours: 1,
     minutes: 0,
@@ -1091,7 +1091,7 @@ const videos = [
   {
     title: 'chill video game music pt. 3',
     id: 'pu3SfD4jpkU',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 0,
@@ -1100,7 +1100,7 @@ const videos = [
   {
     title: 'chill video game music pt. 5',
     id: 'kySPF3bwQPE',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 1,
@@ -1109,7 +1109,7 @@ const videos = [
   {
     title: 'chill video game music pt. 4',
     id: '_AZKN9sRx2I',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 3,
@@ -1118,7 +1118,7 @@ const videos = [
   {
     title: 'chill video game music pt. 6',
     id: 'ZIHq06bGHlQ',
-    mixeur: 'alf',
+    channel: 'alf',
     tags: ['chill', 'games', 'nintendo'],
     hours: 2,
     minutes: 2,

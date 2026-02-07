@@ -1,0 +1,158 @@
+/*------------------NAVBAR------------------*/
+
+.navbar {
+  height: 55px;
+  background: var(--color-bg-sidebar);
+  border-bottom: 3px solid var(--color-bg-separator);
+  padding: 0 20px;
+}
+
+
+/*------------------SEARCH BAR------------------*/
+.search-container {
+  max-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 2px 40px 2px 15px;
+  background-color: var(--color-bg-button);
+  border: 4px solid var(--selected-tag-color);
+  border-radius: 20px;
+  color: var(--color-txt);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  outline: none !important;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 10px var(--selected-tag-color) !important;
+}
+
+
+/*------------------CLOSE BUTTON SEARCH BAR------------------*/
+.clear-search-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 18px;
+  top: 8%;
+  background: none;
+  border: none;
+  color: var(--color-txt-tired);
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.clear-search-btn:hover {
+  color: var(--color-txt);
+}
+
+
+/*------------------VIDEO COUNT------------------*/
+
+.video-count {
+  color: var(--color-txt);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 10px;
+  background: none;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 6px;
+  margin-right: auto;
+}
+
+
+/*------------------NAVBAR BUTTON------------------*/
+.navbar-button-wrapper {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.navbar-button {
+  background-color: var(--color-bg-button);
+  border: 4px solid var(--selected-tag-color);
+  color: var(--color-txt);
+  font-weight: 400;
+  font-family: monospace;
+  transition: all 0.2s ease-in;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 5rem;
+  width: 5rem;
+  height: 2.2rem;
+  font-size: 0.9em;
+  z-index: 500;
+}
+
+.navbar-button:hover {
+  box-shadow: 0 0 15px var(--selected-tag-color);
+}
+
+
+
+/*------------------NO ADS BUTTON------------------*/
+.tooltip-wrapper {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    border-radius: 80px;
+}
+
+.tooltip-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-bg-button);
+    color: var(--color-txt);
+    font-family: monospace;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    border: 3px solid var(--selected-tag-color);
+    z-index: 100;
+    width: 220px;
+    transition: opacity 0.2s;
+}
+
+
+.tooltip-content::before {
+    content: "";
+    position: absolute;
+    top: -25px; /* Couvre l'espace entre le bouton et le tooltip */
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+.tooltip-wrapper:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Style du bouton à l'intérieur du tooltip */
+.toggle-ads-btn {
+    color:  var(--selected-tag-color-light);
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.toggle-ads-btn:hover {
+    filter: brightness(1.2);
+}

@@ -1,81 +1,81 @@
 // src/App.jsx
-import React, { useState } from 'react';
-import { getTagColor } from './config/colors';
-import CardsGrid from './components/CardsGrid';
-import TagFilter from './components/TagFilter';
-import videos from './data/videos';
-import Logo from './components/Logo';
+import React, { useState, useMemo } from 'react';
+import { getTagColor, getLightTagColor, getDarkTagColor } from './styles/colors.js';
+import videos from './data/videos.js';
+import { useFilteredVideos } from './hooks/useFilteredVideos.js';
+/*COMPONENTS*/
+import CardsGrid from './components/main_content/CardsGrid.jsx';
+import Sidebar from './components/sidebar/Sidebar.jsx';
+import Navbar from './components/navbar/Navbar.jsx';
+/*CSS*/
+import './styles/themes.css'
 import './App.css';
-
-
 
 
 function App() {
   const [selectedTag, setSelectedTag] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [noAdsEnabled, setNoAdsEnabled] = useState(true);
+  const [selectedChannel, setSelectedChannel] = useState('every channel');
+  const [durationRange, setDurationRange] = useState({ min: 0, max: Infinity });
   
   const allTags = ['all', 'house', 'energy', 'jazz', 'chill', 'lofi', 'peace', 'ambient', 'ost',
-                  'games', 'nintendo', 'japan', 'wtf', 'french'
-  ];
-  
-  const filteredVideos = selectedTag === 'all' 
-    ? videos 
-    : videos.filter(video => video.tags.includes(selectedTag));
+                  'games', 'nintendo', 'japan', 'wtf', 'french'];
 
+  const allChannels = ['every channel', 'utopic dreamer', 'rain and dirt', 'gesus8', 'ambient2k',
+                  'denz1000', 'vanille', 'alf', 'other'];
+  
+  const tagColor = getTagColor(selectedTag);
+
+  // Utilisez le hook
+  const filteredVideos = useFilteredVideos({
+    videos,
+    selectedTag,
+    selectedChannel,
+    searchQuery,
+    durationRange,
+    allChannels
+  });
 
 
   return (
-    
     <div
-      className="container py-4"
+      className="app-container"
       style={{
-        '--selected-tag-color': getTagColor(selectedTag)
+        '--selected-tag-color': tagColor,
+        '--selected-tag-color-light': getLightTagColor(tagColor),
+        '--selected-tag-color-dark': getDarkTagColor(tagColor)
       }}
-      >
-      {/* Header */}
-      <header className="mb-4">
-        <Logo/>
-        <p className="lead-custom">The best YouTube playlists all in one place</p>
-      </header>
-      
-      {/* Filtre par tags */}
-      <TagFilter
+    >
+      <Sidebar 
         allTags={allTags}
         selectedTag={selectedTag}
         onTagChange={setSelectedTag}
+        allChannels={allChannels}
+        selectedChannel={selectedChannel}
+        onChannelChange={setSelectedChannel}
+        videos={videos}
+        onDurationChange={setDurationRange}
       />
-      
-      {/* Affichage du nombre de résultats */}
-      <div
-        className="lead-custom mb-2"
-        style={{fontWeight: 200}}
-      >
-        {filteredVideos.length} video{filteredVideos.length > 1 ? 's' : ''}
-      </div>
-      
-      {/* Affichage avec grille dynamique */}
-      <CardsGrid 
-        videos={filteredVideos}
-        cardWidth={200}  // Largeur de vos cartes
-        minGap={10}      // Espacement minimum entre les cartes (en px)
-        maxCardsPerRow={10} // Maximum de cartes par ligne
-        selectedTagColor = {getTagColor(selectedTag)}
-        onTagClick={setSelectedTag}
-      />
-      
-      {/* Message si pas de résultats */}
-      {filteredVideos.length === 0 && (
-        <div className="text-center py-5">
-          <div className="display-1 mb-3">😭</div>
-          <h3>No vidéo found</h3>
-          <p className="text-muted">Try some other tags</p>
+
+      <div className="main-wrapper">
+        <Navbar
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+          videoCount={filteredVideos.length}
+          noAdsEnabled={noAdsEnabled}
+          setNoAdsEnabled={setNoAdsEnabled}
+        />
+
+        <div className="main-content noise">
+          <CardsGrid 
+            videos={filteredVideos}
+            selectedTagColor={getTagColor(selectedTag)}
+            onTagClick={setSelectedTag}
+            noAdsEnabled={noAdsEnabled}
+          />
         </div>
-      )}
-      
-      <footer className="mt-5 pt-4 border-top text-center">
-        <p>
-          skibidi
-        </p>
-      </footer>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,124 @@
+
+/*------------------SIDEBAR------------------*/
+.sidebar {
+  width: 300px;
+  background: var(--color-bg-sidebar);
+  padding: 10px;
+  flex-direction:column;
+  border-right: 3px solid var(--color-bg-separator);
+  flex-shrink: 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*------------------LOGO------------------*/
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+/*------------------TEXT CUSTOM------------------*/
+
+.text-subsection {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.16;
+  margin-top: 7px;
+  color: var(--color-txt);
+  border: 0.2rem solid var(--selected-tag-color);
+  border-radius: 5rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: var(--color-bg-button); 
+}
+
+
+
+/*------------------TAGS + TIME CONTROL------------------*/
+
+
+/* Conteneur pour les filtres*/
+.filters-row {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 23px;
+  gap: 30px;
+  width: 90%;
+  
+}
+
+
+
+
+
+/*------------------CHANNEL SELECTOR------------------*/
+
+.channel-selector-wrapper {
+  width: 80%;
+  margin-top: 20px;
+  align-self: center;
+  transform: scale(1.1); 
+  z-index: 1000;
+}
+
+
+.custom-dropdown-toggle {
+  box-shadow: 0 0 15px var(--selected-tag-color);
+  height: 32px;
+  width: 100%;
+  background-color: var(--selected-tag-color) !important;
+  border: 4px solid var(--selected-tag-color) !important;
+  color: var(--selected-tag-color-light) !important;
+  border-radius: 0.375rem;
+  font-family: monospace;
+  font-size: 1.1em;
+  font-weight: 900;
+  
+  /* Centrage du texte */
+  display: flex !important;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+}
+
+/* la fleche */
+.custom-dropdown-toggle::after {
+  margin-left: 10px;
+}
+
+
+.custom-dropdown-menu {
+  background-color: var(--color-bg) !important;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.custom-dropdown-item {
+  height: 32px;
+  border-radius: 0.375rem;
+  color: var(--color-txt)  !important;
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+}
+
+.custom-dropdown-item:hover {
+  background-color: var(--selected-tag-color) !important;
+  color: var(--color-txt)  !important;
+}
+
+.custom-dropdown-item.active {
+  background-color: var(--color-txt-static)  !important;
+  color: var(--selected-tag-color) !important;
+  font-weight: bold;
+}
+
+

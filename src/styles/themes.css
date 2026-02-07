@@ -1,0 +1,39 @@
+/* src/styles/theme.css */
+
+:root {
+
+  /*Couleurs static*/
+  --color-txt-static: #ffffff;
+
+  /* Couleurs principales */
+  --color-txt: #ffffff;
+  --color-txt-tired: #ffffff7e;
+
+  /* Couleurs de fond */
+  --color-bg: #0e0e0e;
+  --color-bg-sidebar: #1a1a1a;
+  --color-bg-separator: #333;
+  --color-bg-button: var(--color-bg);
+
+  
+}
+
+
+
+/* Thème Clair */
+[data-theme="light"] {
+
+  /* Couleurs principales */
+  --color-txt: #0e0e0e; 
+  --color-txt-tired: #0000006a;
+  --color-txt-second: #251f1f;
+
+  /* Couleurs de fond */
+  --color-bg: #ececec;
+  --color-bg-sidebar: #fff7f7;
+  --color-bg-separator: #c3c3c3;
+  --color-bg-button: var(--color-bg);
+
+
+}
+
