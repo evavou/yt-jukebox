@@ -13,29 +13,24 @@ function ThemeToggle() {
   const themeIcon = isDark ? "icons/moon.webp" : "icons/sun.webp";
 
   return (
+    <div>
     <button 
       onClick={toggleTheme}
-      className="navbar-button-wrapper navbar-button"
-      aria-label={isDark ? "Passer au thème clair" : "Passer au thème sombre"}
+      className="navbar-right-wrapper navbar-button"
+      aria-label={isDark ? "Go light mode" : "Go dark mode"}
+      title={isDark ? "Go light mode" : "Go dark mode"}
       style={{
         width: '2.2rem',
       }}
-    >
-      
-      <img
-          src={themeIcon}
-          alt="theme"
-          style={{
-              display: 'inline-flex',
-              boxSizing: 'border-box',
-              justifyContent: 'center',
-              alignItems: 'center',
-              maxWidth: '15px',
-              marginTop: '-1px',
-              marginLeft: isDark ? '1px' : '1px'
-          }}
-        />
-    </button>
+    />
+
+    <img
+      className='theme-icon'
+      src={themeIcon}
+      alt="theme"
+    />
+
+    </div>
   );
 }
 

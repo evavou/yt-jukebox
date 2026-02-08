@@ -41,7 +41,7 @@ function DurationFilter({ videos, onDurationChange }) {
     setIsDragging(type);
   };
 
-  // --- CORRECTION 2 : Logique de clic sur la piste ---
+
   const handleTrackMouseDown = (e) => {
     const value = positionToValue(e.clientY);
     // On déplace le curseur le plus proche de l'endroit cliqué
@@ -115,7 +115,7 @@ function DurationFilter({ videos, onDurationChange }) {
         className="slider-track"
         onMouseDown={handleTrackMouseDown} // Clic intelligent sur la piste
       >
-        <div className="track-background"></div>
+        <div className="track-background noise"></div>
         
         <div 
           className="selected-range"
@@ -127,20 +127,18 @@ function DurationFilter({ videos, onDurationChange }) {
         
         {/* Curseur MIN */}
         <div 
-          className={`slider-thumb min-thumb ${isDragging === 'min' ? 'active' : ''}`}
+          className={`slider-thumb ${isDragging === 'min' ? 'active' : ''}`}
           style={{ bottom: `${minPosition}%`, transform: 'translate(-50%, 50%)' }}
           onMouseDown={(e) => handleMouseDown(e, 'min')}
         >
-          <div className="thumb-label">{formatDuration(minDuration)}</div>
         </div>
         
         {/* Curseur MAX */}
         <div 
-          className={`slider-thumb max-thumb ${isDragging === 'max' ? 'active' : ''}`}
+          className={`slider-thumb ${isDragging === 'max' ? 'active' : ''}`}
           style={{ bottom: `${maxPosition}%`, transform: 'translate(-50%, 50%)' }}
           onMouseDown={(e) => handleMouseDown(e, 'max')}
         >
-          <div className="thumb-label">{formatDuration(maxDurationState)}</div>
         </div>
       </div>
 

@@ -2,17 +2,32 @@
 /*------------------SIDEBAR------------------*/
 .sidebar {
   width: 300px;
+  min-width: 300px;
   background: var(--color-bg-sidebar);
   padding: 10px;
-  flex-direction:column;
+  flex-direction: column;
   border-right: 3px solid var(--color-bg-separator);
   flex-shrink: 0;
+  transition: all 0.15s ease-in !important;
+  overflow: hidden;
 }
+
+.sidebar.sidebar-hidden {
+  width: 0;
+  min-width: 0;
+  padding: 0;
+  margin-right: 0;
+  border-right: none;
+}
+
 
 .sidebar-content {
   display: flex;
   flex-direction: column;
 }
+
+
+
 
 /*------------------LOGO------------------*/
 .logo-container {
@@ -37,7 +52,8 @@
   border-radius: 5rem;
   padding-top: 3px;
   padding-bottom: 3px;
-  background-color: var(--color-bg-button); 
+  background-color: var(--color-bg-button);
+  white-space: nowrap;
 }
 
 

@@ -10,14 +10,19 @@
   width: 100vw;
 }
 
-/*zone principale + navbar*/
+
+
 .main-wrapper {
   display: flex;
   flex: 1;
   flex-direction: column;
   overflow: hidden;
   z-index: 1;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
+
+
+
 
 
 /* Zone principale avec scroll horizontal */

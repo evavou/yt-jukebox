@@ -3,6 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { getTagColor, getLightTagColor, getDarkTagColor } from './styles/colors.js';
 import videos from './data/videos.js';
 import { useFilteredVideos } from './hooks/useFilteredVideos.js';
+import { useSortedVideos } from './hooks/useSortedVideos.js';
 /*COMPONENTS*/
 import CardsGrid from './components/main_content/CardsGrid.jsx';
 import Sidebar from './components/sidebar/Sidebar.jsx';
@@ -16,6 +17,7 @@ function App() {
   const [selectedTag, setSelectedTag] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [noAdsEnabled, setNoAdsEnabled] = useState(true);
+  const [hiddenSidebar, setHiddenSidebar] = useState(false);
   const [selectedChannel, setSelectedChannel] = useState('every channel');
   const [durationRange, setDurationRange] = useState({ min: 0, max: Infinity });
   
@@ -37,6 +39,8 @@ function App() {
     allChannels
   });
 
+  const sortedVideos = useSortedVideos(filteredVideos);
+
 
   return (
     <div
@@ -56,20 +60,24 @@ function App() {
         onChannelChange={setSelectedChannel}
         videos={videos}
         onDurationChange={setDurationRange}
+        hiddenSidebar={hiddenSidebar}
       />
 
-      <div className="main-wrapper">
+      <div className={`main-wrapper ${hiddenSidebar ? 'sidebar-hidden' : ''}`}>
         <Navbar
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
-          videoCount={filteredVideos.length}
+          videoCount={sortedVideos.length}
           noAdsEnabled={noAdsEnabled}
           setNoAdsEnabled={setNoAdsEnabled}
+          hiddenSidebar={hiddenSidebar}
+          setHiddenSidebar={setHiddenSidebar}
+          videos={sortedVideos}
         />
 
         <div className="main-content noise">
           <CardsGrid 
-            videos={filteredVideos}
+            videos={sortedVideos}
             selectedTagColor={getTagColor(selectedTag)}
             onTagClick={setSelectedTag}
             noAdsEnabled={noAdsEnabled}

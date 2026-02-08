@@ -1,7 +1,7 @@
 {
   "name": "youtube_jukebox",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,8 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "xlsx": "^0.18.5"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

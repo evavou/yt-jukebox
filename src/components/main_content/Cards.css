@@ -10,6 +10,7 @@
   transform: scale(1.06);
   box-shadow: 0 0 100px color-mix(in srgb, var(--selected-tag-color ) 80%, transparent) !important;
   outline: 10px solid var(--selected-tag-color) !important ; 
+  z-index: 2005;
 }
 
 
@@ -38,7 +39,7 @@
   font-family: monospace;
   
   mix-blend-mode: difference;
-  transition: all 0.1s ease;
+  transition: all 0.1s ease !important;
 }
 
 .video-shadow {
@@ -69,7 +70,7 @@
   font-size: 0.9em;
   padding: 0.2em 0.6em;
   white-space: nowrap; /* pas de retour a la ligne */
-  transition: all 0.1s ease;
+  transition: all 0.1s ease !important;
   user-select: none;
 }
 

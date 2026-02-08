@@ -14,7 +14,8 @@ function Sidebar({
   selectedChannel, 
   onChannelChange,
   videos,
-  onDurationChange 
+  onDurationChange,
+  hiddenSidebar
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,8 +26,9 @@ function Sidebar({
     setIsOpen(false);
   };
 
+
   return (
-    <div className="sidebar noise">
+    <div className={`sidebar noise ${hiddenSidebar ? 'sidebar-hidden' : ''}`}>
       <div className="sidebar-content">
         <Logo
         selectedTag={selectedTag}
@@ -80,6 +82,7 @@ function Sidebar({
         </div>
       </div>
     </div>
+    
   );
 }
 

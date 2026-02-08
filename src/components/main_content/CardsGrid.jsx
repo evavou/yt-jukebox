@@ -29,8 +29,8 @@ const CardsGrid = ({ videos, selectedTagColor, onTagClick, noAdsEnabled}) => {
         }}
       >
         <img
-          src="public\no_results\no-results.webp"
-          alt="No results"
+          src="/img/noresults.webp"
+          alt="No results :("
           style={{maxWidth: '200px'}}
         />
       </div>

@@ -15,7 +15,7 @@ const videos = [
     tags: ['ost', 'games'],
     hours: 4,
     minutes: 0,
-    tier: 2
+    tier: 0
   },
   {
     title: 'mario kart bops for speeding on the highway',
@@ -24,7 +24,7 @@ const videos = [
     tags: ['ost', 'games'],
     hours: 1,
     minutes: 34,
-    tier: 2
+    tier: 0
   },
   {
     title: 'a cold night in minecraft',
@@ -78,7 +78,7 @@ const videos = [
     tags: ['ambient'],
     hours: 3,
     minutes: 0,
-    tier: 1
+    tier: 0
   },
   {
     title: 'The Dreampools',
@@ -258,7 +258,7 @@ const videos = [
     tags: ['energy', 'games'],
     hours: 0,
     minutes: 43,
-    tier: 1
+    tier: 0
   },
   {
     title: 'Chill & Relaxing Pok mon Music Mix',
@@ -276,7 +276,7 @@ const videos = [
     tags: ['lofi'],
     hours: 1,
     minutes: 0,
-    tier: 1
+    tier: 0
   },
   {
     title: 'POV: you found this cool mixtape at end of the world',
@@ -303,7 +303,7 @@ const videos = [
     tags: ['energy'],
     hours: 0,
     minutes: 40,
-    tier: 1
+    tier: 0
   },
   {
     title: 'a gran turismo vibe mix.',
@@ -339,7 +339,7 @@ const videos = [
     tags: ['chill'],
     hours: 1,
     minutes: 28,
-    tier: 2
+    tier: 0
   },
   {
     title: 'Himiko Kikuchi - Flying Beagle (1987)',
@@ -654,7 +654,7 @@ const videos = [
     tags: ['energy', 'wtf'],
     hours: 0,
     minutes: 58,
-    tier: 1
+    tier: 0
   },
   {
     title: 'Chilling in the Poolrooms...',
@@ -663,7 +663,7 @@ const videos = [
     tags: ['chill', 'wtf'],
     hours: 0,
     minutes: 55,
-    tier: 1
+    tier: 0
   },
   {
     title: 'listening to luv sic pt.2 but also other songs',
@@ -753,7 +753,7 @@ const videos = [
     tags: ['peace'],
     hours: 0,
     minutes: 47,
-    tier: 1
+    tier: 0
   },
   {
     title: 'ambience that\'s always there for you',
@@ -771,7 +771,7 @@ const videos = [
     tags: ['peace'],
     hours: 0,
     minutes: 46,
-    tier: 1
+    tier: 0
   },
   {
     title: 'don\'t stress about things you can\'t control',

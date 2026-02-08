@@ -15,7 +15,7 @@
   /*comme les tags*/
   border-width: 0px;
   font-weight: 900;
-  transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in !important;
   font-family: monospace;
   font-size: 1.1em;
   cursor: pointer;
@@ -86,7 +86,8 @@
   border-radius: 1rem;
   cursor: grab;
   z-index: 2;
-  transition: all 0.1s ease;
+  transition: all 0.1s ease !important;
+  box-shadow: 0 0 10px var(--selected-tag-color);
 }
 
 .slider-thumb:hover {
@@ -98,40 +99,10 @@
   transform: translateX(-50%) scale(1.3);
 }
 
-.min-thumb {
-  box-shadow: 0 0 10px var(--selected-tag-color);
-}
-
-.max-thumb {
-  box-shadow: 0 0 10px var(--selected-tag-color);
-}
-
-.thumb-label {
-  position: absolute;
-  left: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  white-space: nowrap;
-  background: #1a1a1a;
-  color: #f5d4d4;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-family: monospace;
-  font-size: 0.8em;
-  border: 1px solid #333;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-}
-
-.slider-thumb:hover .thumb-label {
-  opacity: 1;
-}
-
 
 
 .slider-thumb.active {
-  transition: none; /* Désactive la transition pendant le drag pour plus de réactivité */
+  transition: none !important;
   cursor: grabbing;
 }
 

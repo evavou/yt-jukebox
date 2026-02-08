@@ -4,8 +4,46 @@
   height: 55px;
   background: var(--color-bg-sidebar);
   border-bottom: 3px solid var(--color-bg-separator);
-  padding: 0 20px;
+  padding: 0 10px;
+  
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  /*
+  overflow: visible;
+  position: relative;
+  z-index: 1000;*/
 }
+
+
+.navbar-left-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -28px;
+}
+
+.navbar-right-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*------------------SIDEBAR TOOGLE BUTTON------------------*/
+.sidebar-toggle {
+  z-index: 0px;
+  font-size: 1.1rem !important;
+  padding-left: 3rem;
+  padding-top: 1px;
+  
+}
+
+.sidebar-toggle:hover {
+  transform: translateX(5px);
+}
+
 
 
 /*------------------SEARCH BAR------------------*/
@@ -23,6 +61,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   outline: none !important;
+  transition: all 0.2s ease-in;
 }
 
 .search-input:focus {
@@ -30,13 +69,15 @@
 }
 
 
+
+
 /*------------------CLOSE BUTTON SEARCH BAR------------------*/
 .clear-search-btn {
   width: 24px;
   height: 24px;
   position: absolute;
-  right: 18px;
-  top: 8%;
+  top: 19%;
+  left: 265px;
   background: none;
   border: none;
   color: var(--color-txt-tired);
@@ -44,37 +85,30 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: color 0.2s ease;
+  z-index: 10;
 }
-
 .clear-search-btn:hover {
   color: var(--color-txt);
 }
 
 
-/*------------------VIDEO COUNT------------------*/
 
+
+/*------------------VIDEO COUNT------------------*/
 .video-count {
   color: var(--color-txt);
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 300;
-  padding: 10px;
   background: none;
-  border-radius: 8px;
-  text-align: center;
-  margin-left: 6px;
-  margin-right: auto;
 }
+
+
 
 
 /*------------------NAVBAR BUTTON------------------*/
-.navbar-button-wrapper {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-
 .navbar-button {
   background-color: var(--color-bg-button);
   border: 4px solid var(--selected-tag-color);
@@ -95,6 +129,20 @@
 .navbar-button:hover {
   box-shadow: 0 0 15px var(--selected-tag-color);
 }
+
+
+
+
+/*------------------THEME TOGGLE------------------*/
+.theme-icon {
+  width: 20px;
+  margin-left: 8px;
+  top: 30%;
+  position: absolute;
+  cursor: pointer;
+  pointer-events: none;
+}
+
 
 
 
@@ -120,7 +168,7 @@
     padding: 12px;
     border-radius: 8px;
     border: 3px solid var(--selected-tag-color);
-    z-index: 100;
+    z-index: 2000;
     width: 220px;
     transition: opacity 0.2s;
 }
@@ -129,10 +177,11 @@
 .tooltip-content::before {
     content: "";
     position: absolute;
-    top: -25px; /* Couvre l'espace entre le bouton et le tooltip */
+    top: -8px;
     left: 0;
     right: 0;
     height: 30px;
+    /*border: 1px solid yellow;*/
 }
 
 .tooltip-wrapper:hover .tooltip-content {
@@ -140,7 +189,7 @@
     opacity: 1;
 }
 
-/* Style du bouton à l'intérieur du tooltip */
+
 .toggle-ads-btn {
     color:  var(--selected-tag-color-light);
     font-family: monospace;

@@ -10,7 +10,7 @@
 .tag-button {
   border-width: 0px;
   font-weight: 400;
-  transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in !important;
   opacity: 0.9;
   font-family: monospace;
   font-size: 1.1em;
